@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists - SINHALA MUSIC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#FFD700',
+                            dark: '#0F0F0F',
+                            accent: '#1DB954',
+                            purple: '#6D28D9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0F0F0F;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-nav {
+            background: rgba(15, 15, 15, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+    <nav class="glass-nav fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html"
+                    class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-gold to-brand-accent">SINHALA
+                    MUSIC</a>
+                <div class="hidden md:block space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="albums.html" class="text-gray-300 hover:text-white transition-colors">Albums</a>
+                    <a href="artists.html"
+                        class="text-white border-b-2 border-brand-gold pb-1 transition-colors">Artists</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-white mb-12 text-center">Popular Artists</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            <!-- Artist 1 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold transition-all duration-300 shadow-xl">
+                    <img src="https://picsum.photos/seed/artist1/400/400"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                </div>
+                <h3 class="mt-4 text-lg font-semibold text-white group-hover:text-brand-gold transition-colors">Kasun
+                    Kalhara</h3>
+            </div>
+            <!-- Artist 2 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold transition-all duration-300 shadow-xl">
+                    <img src="https://picsum.photos/seed/artist2/400/400"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                </div>
+                <h3 class="mt-4 text-lg font-semibold text-white group-hover:text-brand-gold transition-colors">Daddy
+                </h3>
+            </div>
+            <!-- Artist 3 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold transition-all duration-300 shadow-xl">
+                    <img src="https://picsum.photos/seed/artist3/400/400"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                </div>
+                <h3 class="mt-4 text-lg font-semibold text-white group-hover:text-brand-gold transition-colors">
+                    Centigradz</h3>
+            </div>
+            <!-- Artist 4 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold transition-all duration-300 shadow-xl">
+                    <img src="https://picsum.photos/seed/artist4/400/400"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                </div>
+                <h3 class="mt-4 text-lg font-semibold text-white group-hover:text-brand-gold transition-colors">Bathiya
+                    & Santhush</h3>
+            </div>
+            <!-- Artist 5 -->
+            <div class="flex flex-col items-center group cursor-pointer">
+                <div
+                    class="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-800 group-hover:border-brand-gold transition-all duration-300 shadow-xl">
+                    <img src="https://picsum.photos/seed/artist5/400/400"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                </div>
+                <h3 class="mt-4 text-lg font-semibold text-white group-hover:text-brand-gold transition-colors">Umara
+                </h3>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

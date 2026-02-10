@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radical Premaya - Kasun Kalhara | SINHALA MUSIC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#FFD700',
+                            dark: '#0F0F0F',
+                            accent: '#1DB954',
+                            purple: '#6D28D9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0F0F0F;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .track-row:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen bg-brand-dark">
+
+    <nav class="fixed w-full z-50 top-0 bg-transparent transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-bold text-white drop-shadow-md">SINHALA MUSIC</a>
+                <a href="albums.html" class="text-white hover:text-brand-gold font-medium">Back to Albums</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Album Header with Blurred Background -->
+    <div class="relative pt-32 pb-12 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://picsum.photos/seed/album1/800/800"
+                class="w-full h-full object-cover blur-3xl opacity-30 scale-110">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-dark"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-end gap-8">
+            <div
+                class="shadow-2xl shadow-brand-gold/20 rounded-lg overflow-hidden w-64 h-64 md:w-80 md:h-80 flex-shrink-0">
+                <img src="https://picsum.photos/seed/album1/800/800" alt="Album Art" class="w-full h-full object-cover">
+            </div>
+
+            <div class="flex-grow text-center md:text-left">
+                <h5 class="text-sm font-bold uppercase tracking-widest text-brand-gold mb-2">Album</h5>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">Radical Premaya</h1>
+                <div
+                    class="flex items-center justify-center md:justify-start gap-3 text-gray-300 text-sm md:text-base mb-6">
+                    <img src="https://picsum.photos/seed/artist1/400/400" class="w-8 h-8 rounded-full">
+                    <span class="font-bold text-white hover:underline cursor-pointer">Kasun Kalhara</span>
+                    <span>•</span>
+                    <span>2005</span>
+                    <span>•</span>
+                    <span>12 Songs, 48 min</span>
+                </div>
+
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                    <button
+                        class="bg-brand-accent text-black p-4 rounded-full hover:scale-105 transition-transform shadow-lg shadow-green-500/40">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button
+                        class="bg-transparent border border-gray-400 text-white font-bold py-3 px-8 rounded-full hover:border-white hover:bg-white/10 transition-all flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Download Full Album (ZIP)
+                    </button>
+                    <button class="p-3 text-gray-400 hover:text-white rounded-full hover:bg-white/10 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Track List Section -->
+    <div class="bg-black/20 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Table Header -->
+            <div
+                class="grid grid-cols-12 text-sm text-gray-400 border-b border-gray-800 pb-2 mb-4 px-4 sticky top-20 bg-brand-dark/95 backdrop-blur-md z-40 py-4">
+                <div class="col-span-1">#</div>
+                <div class="col-span-6 md:col-span-11">Title</div>
+                <div class="col-span-3 hidden md:block">Plays</div>
+                <div class="col-span-2 hidden md:block text-right">Duration</div>
+                <div class="col-span-3 md:hidden text-right">Options</div> <!-- Mobile only options -->
+            </div>
+
+            <!-- Track 1 -->
+            <div
+                class="grid grid-cols-12 items-center text-sm text-gray-400 hover:text-white px-4 py-3 rounded-md track-row transition-colors group cursor-pointer">
+                <div class="col-span-1 flex items-center">
+                    <span class="text-gray-500 group-hover:hidden">1</span>
+                    <svg class="w-4 h-4 text-white hidden group-hover:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+                    </svg>
+                </div>
+                <div class="col-span-6 md:col-span-5">
+                    <div class="text-white font-medium text-base">Radical Premaya</div>
+                    <div class="text-xs text-gray-500">Kasun Kalhara</div>
+                </div>
+                <div class="col-span-3 hidden md:block">1,245,392</div>
+                <div class="col-span-2 hidden md:block text-right">4:32</div>
+                <div class="col-span-1 md:col-span-1 flex justify-end">
+                    <a href="#" class="text-gray-400 hover:text-brand-gold p-2" title="Download MP3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m4 4V4" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Track 2 -->
+            <div
+                class="grid grid-cols-12 items-center text-sm text-gray-400 hover:text-white px-4 py-3 rounded-md track-row transition-colors group cursor-pointer">
+                <div class="col-span-1 flex items-center">
+                    <span class="text-gray-500 group-hover:hidden">2</span>
+                    <svg class="w-4 h-4 text-white hidden group-hover:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+                    </svg>
+                </div>
+                <div class="col-span-6 md:col-span-5">
+                    <div class="text-white font-medium text-base">Ananthayata Yanawamai</div>
+                </div>
+                <div class="col-span-3 hidden md:block">982,100</div>
+                <div class="col-span-2 hidden md:block text-right">3:45</div>
+                <div class="col-span-1 md:col-span-1 flex justify-end">
+                    <a href="#" class="text-gray-400 hover:text-brand-gold p-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m4 4V4" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Track 3 -->
+            <div
+                class="grid grid-cols-12 items-center text-sm text-gray-400 hover:text-white px-4 py-3 rounded-md track-row transition-colors group cursor-pointer">
+                <div class="col-span-1 flex items-center">
+                    <span class="text-gray-500 group-hover:hidden">3</span>
+                    <svg class="w-4 h-4 text-white hidden group-hover:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+                    </svg>
+                </div>
+                <div class="col-span-6 md:col-span-5">
+                    <div class="text-white font-medium text-base">Male Hapan</div>
+                </div>
+                <div class="col-span-3 hidden md:block">765,432</div>
+                <div class="col-span-2 hidden md:block text-right">3:12</div>
+                <div class="col-span-1 md:col-span-1 flex justify-end">
+                    <a href="#" class="text-gray-400 hover:text-brand-gold p-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m4 4V4" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
